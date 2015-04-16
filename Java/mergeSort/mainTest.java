@@ -18,8 +18,8 @@ public class mainTest {
     	}
     	
     	mergeSort.mergeSort(iArray);
-    	System.out.print("\nThe sorted array: ");
-    	for (int i = 0; i < arraySize - 1; i++){
+    	System.out.print("\nThe sorted array:   ");
+    	for (int i = 0; i < arraySize; i++){
     		System.out.print((iArray[i]) + " ");
     	}
     }

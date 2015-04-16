@@ -17,22 +17,8 @@ public class mainTest {
     		System.out.print((iArray[i]) + " ");
     	}
     	
-    	// Figuring min and max
-    	int min = iArray[0];
-    	int max = iArray[0];
-    	for (int i = 0; i < iArray.length - 1; i++){
-    	    if (iArray[i] < min){
-    	    	min = iArray[i];
-    	    }
-    	}
-    	for (int i = 0; i < iArray.length - 1; i++){
-    	    if (iArray[i] > max){
-    	    	max = iArray[i];
-    	    }
-    	}
-    	System.out.println("min: " + min + " max: " + max);
+    	quickSort.sort(iArray);
     	
-    	countingSort.countingSort(iArray,min,max);
     	System.out.print("\nThe sorted array:   ");
     	for (int i = 0; i < arraySize; i++){
     		System.out.print((iArray[i]) + " ");
